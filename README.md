@@ -16,5 +16,5 @@ Welcome to **iBuyPower**, a web application designed for gamers who want to purc
 
 ## Tech Stack
 
-- **Frontend**: React, Vite, CSS3, TypeScript, Redux Toolkit, Formik, and Yup
+- **Frontend**: React with Vite, CSS3, TypeScript, Redux Toolkit, Formik, and Yup
 - **Backend**: Firebase
