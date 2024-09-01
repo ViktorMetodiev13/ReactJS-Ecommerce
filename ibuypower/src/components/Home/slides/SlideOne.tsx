@@ -1,17 +1,28 @@
 import './slides.css'
 
-import slidOneImg from '../../../assets/SlideOneImgwebp.webp'
+import React from "react";
 
-export const SlideOne = () => {
+import slideOne from '../../../assets/slideOneImg.webp'
+
+export const SlideOne: React.FC = () => {
     return (
         <div>
-            <img src={slidOneImg} alt="labor day rtx4070 ti super" />
+            <img src={slideOne} alt="labor day massive sale on pcs" />
 
             <div className="information">
-                <h2 className="information-title">Labor Day RTX 4070 Ti SUPER</h2>
+                <h2 className="information-title-slide-one">Labor Day Massive Sale</h2>
 
-                <p className="information-subtitle">Windows 11 Home / Intel Core Processor i9-14900K / GeForce <span className="slide-one-important-text">RTX 4070 Ti SUPER</span> 16GB GDDR6X Video Card / 32GB (16GBx2) DDR5/600MHz Memory / 2TB WD Blue SN580 M.2 PCIe SSD</p>
-                <p className="information-price">$2225</p>
+                <ul className="information-slide-one-list">
+                    <li className="slide-one-list-item">5% OFF for ALL purchase over $999 with Code "GAMERDAYS" *</li>
+                    <li className="slide-one-list-item">0% APR Affirm Financing for up to 6 months for US customers with qualifying credit*</li>
+                    <li className="slide-one-list-item">FREE AMD Ryzen 7 9700X upgrade from Ryzen 5 9600X*</li>
+                    <li className="slide-one-list-item">$100 INSTANT REBATE on Intel i9-14900K, i9-14900KF, i7-14700K, and i5-14600K equipped Desktops*</li>
+                    <li className="slide-one-list-item">$50 INSTANT REBATE on AMD Ryzen 7 7800X3D, Ryzen 7 7700 and Ryzen 5 7600 equipped Desktops*</li>
+                    <li className="slide-one-list-item">$200 OFF on ALL GeForce RTX 4090 24GB Video Card*</li>
+                    <li className="slide-one-list-item">$100 OFF on ALL GeForce RTX 4080 SUPER Video Card*</li>
+                </ul>
+
+                <p className='information-slide-one-small-text'>* See sale page for details and limitations.</p>
 
                 <button className="information-shop-btn">Shop</button>
             </div>

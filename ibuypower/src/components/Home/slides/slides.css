@@ -1,3 +1,4 @@
+/* General Rules for all slides */
 .information {
     position: absolute;
     bottom: 70px;
@@ -21,13 +22,9 @@
     margin-bottom: 8px;
 }
 
-.slide-one-important-text {
-    color: #ef4723;
-}
-
 .information-price {
     font-weight: bolder;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .information-shop-btn {
@@ -38,6 +35,38 @@
     display: block;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Slide One */
+.information-title-slide-one {
+    font-weight: 800;
+    max-width: 70%;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.information-slide-one-list {
+    margin-left: -20px;
+    font-size: 18px;
+    margin-bottom: 14px;
+    max-width: 65%;
+}
+
+.information-slide-one-small-text {
+    font-size: 10px;
+    margin-bottom: 60px;
+}
+
+/* Slide Two */
+.information-subtitle-slide-two {
+    font-size: 14px;
+    max-width: 50%;
+    margin-bottom: 60px;
+}
+
+/* Slide Three */
+.slide-one-important-text {
+    color: #ef4723;
 }
 
 
