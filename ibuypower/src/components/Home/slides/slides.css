@@ -1,0 +1,43 @@
+.information {
+    position: absolute;
+    bottom: 70px;
+    max-width: 40%;
+    left: 130px;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.information-title {
+    font-weight: 800;
+    max-width: 60%;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.information-subtitle {
+    font-size: 14px;
+    max-width: 60%;
+    margin-bottom: 8px;
+}
+
+.slide-one-important-text {
+    color: #ef4723;
+}
+
+.information-price {
+    font-weight: bolder;
+    padding-bottom: 60px;
+}
+
+.information-shop-btn {
+    font-weight: 600;
+    border-radius: 22px;
+    padding: 4px 26px;
+    border: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
