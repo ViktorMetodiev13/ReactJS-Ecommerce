@@ -28,9 +28,9 @@
 }
 
 .information-shop-btn {
-    font-weight: 600;
+    font-weight: bolder;
     border-radius: 22px;
-    padding: 4px 26px;
+    padding: 6px 32px;
     border: none;
     display: block;
     font-size: 16px;
@@ -68,5 +68,84 @@
 .slide-one-important-text {
     color: #ef4723;
 }
+
+/* Slide Four */
+.information-subtitle-slide-four {
+    font-size: 14px;
+    max-width: 70%;
+    margin-bottom: 60px;
+}
+
+/* Slide Five */
+.information-subtitle-slide-five {
+    font-size: 14px;
+    max-width: 50%;
+    margin-bottom: 60px;
+}
+
+/* Slide Six */
+.information-title-slide-six {
+    font-weight: 800;
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.information-subtitle-slide-six {
+    font-size: 14px;
+    max-width: 80%;
+    margin-bottom: 60px;
+}
+
+/* Slide Seven */
+.information-title-slide-seven {
+    font-weight: 800;
+    max-width: 60%;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: black;
+}
+
+.information-subtitle-slide-seven {
+    font-size: 14px;
+    max-width: 50%;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.information-shop-btn-slide-seven {
+    font-weight: bolder;
+    border-radius: 22px;
+    padding: 6px 32px;
+    border: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+
+/* Slide Eight */
+.information-subtitle-slide-eight {
+    font-size: 14px;
+    max-width: 70%;
+    margin-bottom: 60px;
+}
+
+/* Slide Nine */
+.information-title-slide-nine {
+    font-weight: 800;
+    max-width: 70%;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.information-subtitle-slide-nine {
+    font-size: 14px;
+    max-width: 50%;
+    margin-bottom: 60px;
+}
+
+
 
 
