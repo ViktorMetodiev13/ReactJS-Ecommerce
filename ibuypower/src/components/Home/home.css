@@ -1,12 +1,12 @@
 /* Swiper */
 #app {
-    height: 90%;
+    height: 100%;
 }
 
 html,
 body {
     position: relative;
-    height: 90%;
+    height: 100%;
 }
 
 body {
@@ -35,8 +35,28 @@ body {
 .swiper-slide img {
     display: block;
     width: 97%;
-    height: 90%;
-    object-fit: cover;
+    height: 100%;
     margin: auto;
-    cursor: pointer;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 100%;
 }

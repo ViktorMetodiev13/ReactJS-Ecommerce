@@ -1,11 +1,14 @@
 import './home.css';
+
 import 'swiper/css';
+import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+
 import { SlideThree } from './slides/SlideThree';
 import { SlideTwo } from './slides/SlideTwo';
 import { SlideOne } from './slides/SlideOne';
@@ -19,7 +22,19 @@ import { SlideNine } from './slides/SlideNine';
 export const Home: React.FC = () => {
     return (
         <div className="home">
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <Swiper
+                spaceBetween={0}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 6500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Autoplay, Pagination]}
+                className="mySwiper"
+            >
                 <SwiperSlide><SlideOne /></SwiperSlide>
                 <SwiperSlide><SlideTwo /></SwiperSlide>
                 <SwiperSlide><SlideThree /></SwiperSlide>
