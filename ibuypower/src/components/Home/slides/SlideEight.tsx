@@ -10,9 +10,9 @@ export const SlideEight: React.FC = () => {
             <img src={slideEight} alt="labor day rtx4070 ti super" />
 
             <div className="information">
-                <h2 className="information-title">Game without compromise.</h2>
+                <h2 className="information-title-slide-eight">NVIDIA RTX AI</h2>
 
-                <p className="information-subtitle-slide-eight">Go Beyond performance with Intel® Core™ processors.</p>
+                <p className="information-subtitle-slide-eight">NVIDIA Powers the World's AI. And Yours.</p>
                 <button className="information-shop-btn">Shop</button>
             </div>
         </div>

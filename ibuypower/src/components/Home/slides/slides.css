@@ -126,9 +126,16 @@
 }
 
 /* Slide Eight */
+.information-title-slide-eight {
+    font-weight: 800;
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
 .information-subtitle-slide-eight {
     font-size: 14px;
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 60px;
 }
 
