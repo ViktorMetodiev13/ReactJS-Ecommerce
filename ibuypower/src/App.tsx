@@ -1,11 +1,22 @@
-import logo from './assets/Wesite logo.png'
-import './App.css'
+import './styles/reset.css'
+
+import { Navigation } from './components/Navigation/Navigation'
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './components/Home/Home';
 
 function App() {
 
     return (
         <>
-            <img src={logo} className="logo" alt="Vite logo" />
+            <Navigation />
+
+            <Routes>
+                <Route path='/' element={<Home />} ></Route>
+                <Route path='/gaming-pcs' element></Route>
+                <Route path='/gaming-laptops' element></Route>
+                <Route path='/support' element></Route>
+                <Route path='/about-us' element></Route>
+            </Routes>
         </>
     )
 }
