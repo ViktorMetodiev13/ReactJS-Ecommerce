@@ -1,3 +1,9 @@
+/* General Home settings */
+.home {
+    background-color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 /* Swiper */
 #app {
     height: 100%;
@@ -20,6 +26,7 @@ body {
 .swiper {
     width: 100%;
     height: 100%;
+    margin-bottom: 70px;
 }
 
 .swiper-slide {
@@ -59,4 +66,114 @@ body {
     background-color: aqua;
     padding: 20px;
     border-radius: 100%;
+}
+
+/* featured-desktops */
+.featured-desktops {
+    width: 97%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.featured-desktops-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.pc-list {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    gap: 16px;
+}
+
+.pc-list-item {
+    border: 1px solid lightgrey;
+    padding: 8px 14px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pc-item-cover-img {
+    max-width: 80%;
+    height: fit-content;
+    margin: auto;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.pc-information-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pc-information-title:hover {
+    color: rgb(254 27 27);
+    cursor: pointer;
+}
+
+.pc-information-order-details {
+    margin-top: 14px;
+}
+
+.pc-information-order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.pc-information-save-price {
+    color: rgb(255 142 60);
+    font-weight: bold;
+    border: 1px solid rgb(255 142 60);
+    padding: 4px 6px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.pc-information-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pc-information-price {
+    margin: 6px 0px 4px 0px;
+}
+
+.new-price {
+    letter-spacing: 0.7px;
+    font-size: 16px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: rgb(153 153 153);
+}
+
+.pc-information-monthly-payment {
+    margin-bottom: 10px;
+}
+
+.monthly-payment-amount {
+    color: #2474ff;
+}
+
+.pc-information-buy-btn {
+    padding: 6px 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(254 27 27);
+    color: rgb(254 27 27);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pc-information-buy-btn:hover {
+    transition: .3s;
+    background-color: rgb(254 27 27);
+    color: #fff;
 }

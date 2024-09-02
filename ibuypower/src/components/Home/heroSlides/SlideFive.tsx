@@ -2,7 +2,7 @@ import './slides.css'
 
 import React from "react";
 
-import slideFive from '../../../assets/slideFiveImg.webp'
+import slideFive from '../../../assets/slideImages/slideFiveImg.webp'
 
 export const SlideFive: React.FC = () => {
     return (
