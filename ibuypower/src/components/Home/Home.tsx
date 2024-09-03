@@ -24,11 +24,11 @@ import pc2 from '../../assets/pcImages/RDY Fractal DDOO2.avif';
 import pc3 from '../../assets/pcImages/AMD Ryzen Ultra Gaming Daily Deal.avif';
 import pc4 from '../../assets/pcImages/pc4.avif';
 
-import featureImg1 from '../../assets/features-images/firstImage.webp';
-import featureImg2 from '../../assets/features-images/secondImage.webp';
-import featureImg3 from '../../assets/features-images/thirdImage.webp';
-import featureImg4 from '../../assets/features-images/forthImage.webp';
-import featureImg5 from '../../assets/features-images/fifthImage.webp';
+import featureImg1 from '../../assets/featuresImages/firstImage.webp';
+import featureImg2 from '../../assets/featuresImages/secondImage.webp';
+import featureImg3 from '../../assets/featuresImages/thirdImage.webp';
+import featureImg4 from '../../assets/featuresImages/forthImage.webp';
+import featureImg5 from '../../assets/featuresImages/fifthImage.webp';
 
 export const Home: React.FC = () => {
     return (
@@ -58,7 +58,6 @@ export const Home: React.FC = () => {
                     <SwiperSlide><SlideNine /></SwiperSlide>
                 </Swiper>
             </div>
-
 
             <div className="featured-desktops">
                 <h2 className="featured-desktops-title">Best Selling Gaming PC</h2>

@@ -1,6 +1,7 @@
 import { Navigation } from './components/Navigation/Navigation'
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home/Home';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
                 <Route path='/support' element></Route>
                 <Route path='/about-us' element></Route>
             </Routes>
+
+            <Footer />
         </>
     )
 }
