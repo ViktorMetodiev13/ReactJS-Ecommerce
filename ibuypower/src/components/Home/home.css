@@ -1,7 +1,6 @@
 /* General Home settings */
 .home {
     background-color: #fff;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 /* Hero Section Swiper */
@@ -66,14 +65,14 @@ body {
 }
 
 /* featured-desktops */
-.featured-desktops {
+.best-selling-gaming-pcs {
     width: 97%;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 70px;
 }
 
-.featured-desktops-title {
+.best-selling-gaming-pcs-title {
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 24px;
@@ -174,6 +173,7 @@ body {
     color: rgb(254 27 27);
     cursor: pointer;
     font-size: 14px;
+    background-color: #fff;
 }
 
 .pc-information-buy-btn:hover {
@@ -241,7 +241,8 @@ body {
 }
 
 .features-pcs-and-laptops {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -267,4 +268,67 @@ body {
 
 .features-image-pcs {
     width: 480px;
+}
+
+/* Follow Journey */
+
+.follow-journey {
+    background-color: rgb(242 246 250);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.follow-journey-title {
+    font-size: 36px;
+}
+
+.follow-journey-title-special-text {
+    color: #af3cdb;
+}
+
+.follow-journey-title-special-text:hover {
+    transition: 0.3s;
+    color: #be2119;
+    cursor: pointer;
+}
+
+.follow-journey-icon-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.follow-journey-icon-list-item {
+    color: #af3cdb;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.fa-facebook-f:hover {
+    transition: 0.16s;
+    color: blue;
+}
+
+.fa-twitter:hover {
+    transition: 0.16s;
+    color: rgb(29, 161, 242);
+}
+
+.fa-instagram:hover {
+    transition: 0.16s;
+    color: rgb(205, 72, 107);
+}
+
+.fa-tiktok:hover {
+    transition: 0.16s;
+    color: black;
+}
+
+.fa-youtube:hover {
+    transition: 0.16s;
+    color: #be2119;
 }

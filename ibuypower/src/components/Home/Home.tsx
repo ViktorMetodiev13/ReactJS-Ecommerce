@@ -59,8 +59,8 @@ export const Home: React.FC = () => {
                 </Swiper>
             </div>
 
-            <div className="featured-desktops">
-                <h2 className="featured-desktops-title">Best Selling Gaming PC</h2>
+            <div className="best-selling-gaming-pcs">
+                <h2 className="best-selling-gaming-pcs-title">Best Selling Gaming PCs</h2>
 
                 <div className="pc-list">
                     <Swiper
@@ -430,7 +430,7 @@ export const Home: React.FC = () => {
 
                         <button className="shop-now-btn">Show Now</button>
 
-                        <img src={featureImg4} alt="Gaming PCs" className='features-image-pcs' />
+                        <img src={pc4} alt="Gaming PCs" className='features-image-pcs' />
                     </div>
 
                     <div className="gaming-pcs">
@@ -440,9 +440,21 @@ export const Home: React.FC = () => {
 
                         <button className="shop-now-btn">Show Now</button>
 
-                        <img src={featureImg5} alt="Gaming Laptops" className='features-image-pcs' />
+                        <img src={featureImg4} alt="Gaming Laptops" className='features-image-pcs' />
                     </div>
                 </div>
+            </div>
+
+            <div className="follow-journey">
+                <h2 className="follow-journey-title">Follow The Journey <span className='follow-journey-title-special-text'>@iBUYPOWER</span></h2>
+
+                <ul className="follow-journey-icon-list" role='list'>
+                    <li className="follow-journey-icon-list-item"><i className="fab fa-facebook-f"></i></li>
+                    <li className="follow-journey-icon-list-item"><i className="fab fa-twitter"></i></li>
+                    <li className="follow-journey-icon-list-item"><i className="fab fa-instagram"></i></li>
+                    <li className="follow-journey-icon-list-item"><i className="fab fa-tiktok"></i></li>
+                    <li className="follow-journey-icon-list-item"><i className="fab fa-youtube"></i></li>
+                </ul>
             </div>
         </div>
     )

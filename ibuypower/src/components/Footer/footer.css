@@ -1,6 +1,7 @@
 .footer {
     color: #fff;
     position: relative;
+    margin-top: -20px;
 }
 
 .footer-background-img {
@@ -21,4 +22,5 @@
     max-width: 90%;
     margin: auto;
     gap: 16px;
+    padding-top: 4.8%;
 }
