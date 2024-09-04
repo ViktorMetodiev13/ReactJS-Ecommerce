@@ -28,7 +28,7 @@ import featureImg1 from '../../assets/featuresImages/firstImage.webp';
 import featureImg2 from '../../assets/featuresImages/secondImage.webp';
 import featureImg3 from '../../assets/featuresImages/thirdImage.webp';
 import featureImg4 from '../../assets/featuresImages/forthImage.webp';
-import featureImg5 from '../../assets/featuresImages/fifthImage.webp';
+import featureImg5 from '../../assets/featuresImages/fifthImg-removebg-preview.png';
 
 export const Home: React.FC = () => {
     return (
@@ -430,7 +430,7 @@ export const Home: React.FC = () => {
 
                         <button className="shop-now-btn">Show Now</button>
 
-                        <img src={pc4} alt="Gaming PCs" className='features-image-pcs' />
+                        <img src={featureImg5} alt="Gaming PCs" className='features-image-pcs' />
                     </div>
 
                     <div className="gaming-pcs">
