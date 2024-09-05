@@ -1,0 +1,85 @@
+.register {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-register-background {
+    width: 100%;
+}
+
+.auth-form {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 8%;
+}
+
+.auth-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-style: italic;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.auth-field {
+    padding: 12px 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* TODO: FIX IT */
+.auth-field:active {
+    border: 1px solid blue
+}
+
+.sign-in-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.already-have-account {
+    font-size: 18px;
+    color: #fff;
+}
+
+.register-sign-in-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.register-sign-in-link:hover {
+    transition: 0.3s;
+    color: #0A21C0;
+    color: #c25be9;
+}
+
+.auth-create-btn {
+    background-color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-create-btn:hover {
+    transition: 0.3s;
+    background-color: #8697C4;
+    color: #fff;
+}

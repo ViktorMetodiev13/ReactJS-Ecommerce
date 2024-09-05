@@ -1,8 +1,6 @@
-import './slides.css'
-
 import React from "react";
 
-import slideSeven from '../../../assets/slideImages/slideSevenImg.webp'
+import slideSeven from '../../../../assets/slideImages/slideSevenImg.webp'
 
 export const SlideSeven: React.FC = () => {
     return (

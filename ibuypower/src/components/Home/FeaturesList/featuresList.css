@@ -1,0 +1,86 @@
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.features-item {
+    background-color: rgb(255 221 221);
+}
+
+.feature-content {
+    max-width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+.feature-one-image {
+    max-width: 800px;
+}
+
+.feature-information-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.feature-information-description {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.shop-now-btn {
+    padding: 12px 50px;
+    border: 1px solid rgb(0 0 0);
+    border-radius: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0 0 0);
+    margin-bottom: 20px;
+}
+
+.features-item:nth-child(2) {
+    background-color: rgb(217 251 250);
+}
+
+.features-item:nth-child(2) .feature-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.features-item:nth-child(3) {
+    background-color: rgb(255 247 203);
+}
+
+.features-pcs-and-laptops {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gaming-pcs {
+    background-color: rgb(242 246 250);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gaming-pcs-title {
+    font-size: 36px;
+}
+
+.gaming-pcs-subtitle {
+    font-size: 18px;
+    max-width: 60%;
+    margin-bottom: 28px;
+}
+
+.features-image-pcs {
+    width: 480px;
+}

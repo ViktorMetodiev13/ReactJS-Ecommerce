@@ -11,19 +11,19 @@ export const Navigation = () => {
 
             <ul className='nav-list' role='list'>
                 <li className='nav-list-item'>
-                    <Link to="/gaming-pcs">Gaming PCs</Link>
+                    <Link to="/gaming-pcs" className='nav-list-item-link'>Gaming PCs</Link>
                 </li>
                 <li className='nav-list-item'>
-                    <Link to="/gaming-laptops">Gaming Laptops</Link>
+                    <Link to="/gaming-laptops" className='nav-list-item-link'>Gaming Laptops</Link>
                 </li>
                 <li className='nav-list-item'>
                     <Link to="/"><img className="website-logo" src={logo} alt="ibp-logo" /></Link>
                 </li>
                 <li className='nav-list-item'>
-                    <Link to="/support">Support</Link>
+                    <Link to="/support" className='nav-list-item-link'>Support</Link>
                 </li>
                 <li className='nav-list-item'>
-                    <Link to="/about-us">About Us</Link>
+                    <Link to="/about-us" className='nav-list-item-link'>About Us</Link>
                 </li>
             </ul>
 
