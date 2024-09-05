@@ -29,24 +29,32 @@
     border-bottom: 3px solid #c25be9;
 }
 
-.icons-list {
+.nav-icons-list {
     display: flex;
     gap: 28px;
     font-size: 20px;
     color: #3a3a3a;
 }
 
+.nav-icon-list-item {
+    color: #3a3a3a !important;
+}
+
+.nav-icon-list-item-link {
+    color: #3a3a3a;
+}
+
 .fa-search:hover {
     cursor: pointer;
-    color: #c25be9;
+    color: #8860D0;
 }
 
 .fa-user:hover {
     cursor: pointer;
-    color: #c25be9;
+    color: #8860D0;
 }
 
 .fa-shopping-cart:hover {
     cursor: pointer;
-    color: #c25be9;
+    color: #8860D0;
 }

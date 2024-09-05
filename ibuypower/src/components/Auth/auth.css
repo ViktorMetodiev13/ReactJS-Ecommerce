@@ -8,11 +8,23 @@
     width: 100%;
 }
 
-.auth-form {
+.auth-register-form {
     position: absolute;
     width: 30%;
     top: 20%;
     left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-login-form {
+    position: absolute;
+    width: 30%;
+    top: 16%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .auth-title {
@@ -39,11 +51,6 @@
     font-size: 16px;
 }
 
-/* TODO: FIX IT */
-.auth-field:active {
-    border: 1px solid blue
-}
-
 .register-sign-in-link {
     text-decoration: none;
     color: #fff;
@@ -56,7 +63,8 @@
 }
 
 .auth-create-btn,
-.auth-login-btn {
+.auth-login-btn,
+.auth-sign-up-btn {
     background-color: #fff;
     border: none;
     padding: 14px;
@@ -69,8 +77,16 @@
 }
 
 .auth-create-btn:hover,
-.auth-login-btn:hover {
+.auth-login-btn:hover,
+.auth-sign-up-btn:hover {
     transition: 0.3s;
     background-color: #8697C4;
     color: #fff;
+}
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 16px;
 }

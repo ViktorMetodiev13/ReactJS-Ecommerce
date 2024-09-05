@@ -27,10 +27,10 @@ export const Navigation = () => {
                 </li>
             </ul>
 
-            <ul className="icons-list">
-                <i className="fas fa-search"></i>
-                <i className="fas fa-user"></i>
-                <i className="fas fa-shopping-cart"></i>
+            <ul className="nav-icons-list" role='list'>
+                <li className='nav-icon-list-item'><Link to='' className='nav-icon-list-item-link'><i className="fas fa-search"></i></Link></li>
+                <li className='nav-icon-list-item'><Link to='/login' className='nav-icon-list-item-link'><i className="fas fa-user"></i></Link></li>
+                <li className='nav-icon-list-item'><Link to='/cart' className='nav-icon-list-item-link'><i className="fas fa-shopping-cart"></i></Link></li>
             </ul>
         </nav>
     )
