@@ -4,6 +4,7 @@ import { Home } from './components/Home/Home';
 import { Footer } from './components/Footer/Footer';
 import { Register } from './components/Auth/Register/Register';
 import { Login } from './components/Auth/Login/Login';
+import { ResetPassword } from './components/Auth/ResetPassword/ResetPassword';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/about-us' element></Route>
                 <Route path='/login' element={<Login />}></Route>
                 <Route path='/register' element={<Register />}></Route>
+                <Route path='/login/reset-password' element={<ResetPassword />}></Route>
             </Routes>
 
             <Footer />

@@ -27,6 +27,16 @@
     gap: 100px;
 }
 
+.auth-reset-password-form {
+    position: absolute;
+    width: 27%;
+    top: 30%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .auth-title {
     text-transform: uppercase;
     color: #fff;
@@ -36,10 +46,21 @@
     font-style: italic;
 }
 
+.auth-reset-password-subtitle {
+    color: #fff;
+    font-size: 16px;
+}
+
 .input-fields {
     display: flex;
     flex-direction: column;
     gap: 26px;
+}
+
+.auth-reset-password-form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .auth-field {

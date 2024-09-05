@@ -10,7 +10,7 @@ export const Login: React.FC = () => {
 
     const navigateToRegister = () => {
         navigate('/register')
-    }
+    };
 
     return (
         <div className="auth-login">
@@ -26,7 +26,7 @@ export const Login: React.FC = () => {
 
                         <button className="auth-login-btn">Login</button>
 
-                        <p className="sign-in"><Link to='/login' className='register-sign-in-link'>Forgot your password?</Link></p>
+                        <p className="sign-in"><Link to='/login/reset-password' className='register-sign-in-link'>Forgot your password?</Link></p>
                     </div>
                 </div>
 
