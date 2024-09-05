@@ -1,4 +1,5 @@
-.register {
+.auth-register,
+.auth-login {
     margin-bottom: 20px;
     position: relative;
 }
@@ -43,17 +44,6 @@
     border: 1px solid blue
 }
 
-.sign-in-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.already-have-account {
-    font-size: 18px;
-    color: #fff;
-}
-
 .register-sign-in-link {
     text-decoration: none;
     color: #fff;
@@ -62,11 +52,11 @@
 
 .register-sign-in-link:hover {
     transition: 0.3s;
-    color: #0A21C0;
-    color: #c25be9;
+    color: #8860D0;
 }
 
-.auth-create-btn {
+.auth-create-btn,
+.auth-login-btn {
     background-color: #fff;
     border: none;
     padding: 14px;
@@ -78,7 +68,8 @@
     cursor: pointer;
 }
 
-.auth-create-btn:hover {
+.auth-create-btn:hover,
+.auth-login-btn:hover {
     transition: 0.3s;
     background-color: #8697C4;
     color: #fff;

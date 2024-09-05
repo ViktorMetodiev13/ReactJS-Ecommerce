@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { Footer } from './components/Footer/Footer';
 import { Register } from './components/Auth/Register/Register';
+import { Login } from './components/Auth/Login/Login';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
                 <Route path='/gaming-laptops/:id' element></Route>
                 <Route path='/support' element></Route>
                 <Route path='/about-us' element></Route>
-                <Route path='/login' element></Route>
+                <Route path='/login' element={<Login />}></Route>
                 <Route path='/register' element={<Register />}></Route>
             </Routes>
 
