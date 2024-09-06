@@ -44,6 +44,12 @@
     color: #3a3a3a;
 }
 
+.nav-icon-list-item-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
 .fa-search:hover {
     cursor: pointer;
     color: #8860D0;

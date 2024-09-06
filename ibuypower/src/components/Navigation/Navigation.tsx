@@ -11,10 +11,10 @@ export const Navigation = () => {
 
             <ul className='nav-list' role='list'>
                 <li className='nav-list-item'>
-                    <Link to="/gaming-pcs" className='nav-list-item-link'>Gaming PCs</Link>
+                    <Link to="/products/gaming-pcs" className='nav-list-item-link'>Gaming PCs</Link>
                 </li>
                 <li className='nav-list-item'>
-                    <Link to="/gaming-laptops" className='nav-list-item-link'>Gaming Laptops</Link>
+                    <Link to="/products/gaming-laptops" className='nav-list-item-link'>Gaming Laptops</Link>
                 </li>
                 <li className='nav-list-item'>
                     <Link to="/"><img className="website-logo" src={logo} alt="ibp-logo" /></Link>
@@ -28,7 +28,7 @@ export const Navigation = () => {
             </ul>
 
             <ul className="nav-icons-list" role='list'>
-                <li className='nav-icon-list-item'><Link to='' className='nav-icon-list-item-link'><i className="fas fa-search"></i></Link></li>
+                <li className='nav-icon-list-item'><button className='nav-icon-list-item-btn'><i className="fas fa-search"></i></button></li>
                 <li className='nav-icon-list-item'><Link to='/login' className='nav-icon-list-item-link'><i className="fas fa-user"></i></Link></li>
                 <li className='nav-icon-list-item'><Link to='/cart' className='nav-icon-list-item-link'><i className="fas fa-shopping-cart"></i></Link></li>
             </ul>
