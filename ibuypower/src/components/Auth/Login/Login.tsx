@@ -5,11 +5,14 @@ import React from "react";
 import backgroundImg from '../../../assets/login-register-Background.jpg';
 import { Link, useNavigate } from 'react-router-dom';
 
+import * as PATHS from '../../../shared/paths';
+
+
 export const Login: React.FC = () => {
     const navigate = useNavigate();
 
     const navigateToRegister = () => {
-        navigate('/register')
+        navigate(PATHS.REGISTER)
     };
 
     return (
@@ -26,7 +29,7 @@ export const Login: React.FC = () => {
 
                         <button className="auth-login-btn">Login</button>
 
-                        <p className="sign-in"><Link to='/login/reset-password' className='register-sign-in-link'>Forgot your password?</Link></p>
+                        <p className="sign-in"><Link to={PATHS.RESET_PASSWORD} className='register-sign-in-link'>Forgot your password?</Link></p>
                     </div>
                 </div>
 

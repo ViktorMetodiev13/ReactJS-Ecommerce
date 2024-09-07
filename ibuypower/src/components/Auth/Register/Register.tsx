@@ -5,6 +5,9 @@ import React from "react";
 import backgroundImg from '../../../assets/login-register-Background.jpg';
 import { Link } from 'react-router-dom';
 
+import * as PATHS from '../../../shared/paths';
+
+
 export const Register: React.FC = () => {
     return (
         <div className="auth-register">
@@ -19,7 +22,7 @@ export const Register: React.FC = () => {
                     <input type="email" placeholder='Email' className='auth-field' />
                     <input type="password" placeholder='Password' className='auth-field' />
 
-                    <p className="sign-in"><Link to='/login' className='register-sign-in-link'>Already have an Account?</Link></p>
+                    <p className="sign-in"><Link to={PATHS.LOGIN} className='register-sign-in-link'>Already have an Account?</Link></p>
 
                     <button className="auth-create-btn">Create</button>
                 </div>

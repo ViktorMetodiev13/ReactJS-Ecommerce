@@ -54,20 +54,20 @@ export const FeaturesList: React.FC = () => {
                 </div>
 
                 <div className="features-pcs-and-laptops">
-                    <div className="gaming-pcs">
-                        <h3 className="gaming-pcs-title">Gaming PCs</h3>
+                    <div className="features-gaming-pcs">
+                        <h3 className="features-gaming-pcs-title">Gaming PCs</h3>
 
-                        <p className="gaming-pcs-subtitle">Explore our complete selection of gaming PCs and dive into the ultimate gaming experience, wherever you are.</p>
+                        <p className="features-gaming-pcs-subtitle">Explore our complete selection of gaming PCs and dive into the ultimate gaming experience, wherever you are.</p>
 
                         <button className="shop-now-btn">Show Now</button>
 
                         <img src={featureImg5} alt="Gaming PCs" className='features-image-pcs' />
                     </div>
 
-                    <div className="gaming-pcs">
-                        <h3 className="gaming-pcs-title">Gaming Laptops</h3>
+                    <div className="features-gaming-pcs">
+                        <h3 className="features-gaming-pcs-title">Gaming Laptops</h3>
 
-                        <p className="gaming-pcs-subtitle">Browse through our full range of configured gaming laptops. Immerse yourself in the ultimate gaming experience on the go.</p>
+                        <p className="features-gaming-pcs-subtitle">Browse through our full range of configured gaming laptops. Immerse yourself in the ultimate gaming experience on the go.</p>
 
                         <button className="shop-now-btn">Show Now</button>
 

@@ -1,0 +1,12 @@
+export const HOME = '/';
+export const GAMING_PCS = '/products/gaming-pcs';
+export const GAMING_PC_DETAILS = '/products/gaming-pcs/:id';
+export const GAMING_LAPTOPS = '/products/gaming-laptops';
+export const GAMING_LAPTOP_DETAIL = '/products/gaming-laptops/:id';
+export const SUPPORT = '/support';
+export const ABOUT_US = '/about-us';
+export const LOGIN = '/login';
+export const REGISTER = '/register';
+export const RESET_PASSWORD = '/login/reset-password';
+export const CART = '/cart';
+export const NOT_FOUND = '*';

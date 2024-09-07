@@ -62,7 +62,7 @@
     margin-bottom: 20px;
 }
 
-.gaming-pcs {
+.features-gaming-pcs {
     background-color: rgb(242 246 250);
     padding: 32px;
     display: flex;
@@ -71,11 +71,11 @@
     text-align: center;
 }
 
-.gaming-pcs-title {
+.features-gaming-pcs-title {
     font-size: 36px;
 }
 
-.gaming-pcs-subtitle {
+.features-gaming-pcs-subtitle {
     font-size: 18px;
     max-width: 60%;
     margin-bottom: 28px;

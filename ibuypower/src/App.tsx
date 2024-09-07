@@ -1,6 +1,6 @@
 import { useRoutes } from 'react-router-dom';
 
-import { routes } from './shared/routes'
+import { routes } from './routes'
 
 import { Navigation } from './components/Navigation/Navigation'
 import { Footer } from './components/Footer/Footer';
