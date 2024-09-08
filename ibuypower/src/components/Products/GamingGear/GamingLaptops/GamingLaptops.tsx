@@ -102,7 +102,7 @@ export const GamingLaptops: React.FC = () => {
 
                         <button className='gaming-machines-featured-deal-buy-now-btn'>Buy Now</button>
 
-                        <img src={featuredDealsLaptopsImgTwo} alt="Chimera NP7570E Gaming Laptop" className='gaming-machines-featured-deal-img' />
+                        <img src={featuredDealsLaptopsImgTwo} alt="Chimera NP9373W Gaming Laptop" className='gaming-machines-featured-deal-img' />
                     </div>
                 </div>
             </div>
