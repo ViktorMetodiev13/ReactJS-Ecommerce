@@ -33,7 +33,7 @@ export const Navigation = () => {
             <ul className="nav-icons-list" role='list'>
                 <li className='nav-icon-list-item'><button className='nav-icon-list-item-btn'><i className="fas fa-search"></i></button></li>
                 <li className='nav-icon-list-item'><Link to={PATHS.LOGIN} className='nav-icon-list-item-link'><i className="fas fa-user"></i></Link></li>
-                <li className='nav-icon-list-item'><Link to={PATHS.REGISTER} className='nav-icon-list-item-link'><i className="fas fa-shopping-cart"></i></Link></li>
+                <li className='nav-icon-list-item'><Link to={PATHS.CART} className='nav-icon-list-item-link'><i className="fas fa-shopping-cart"></i></Link></li>
             </ul>
         </nav>
     )

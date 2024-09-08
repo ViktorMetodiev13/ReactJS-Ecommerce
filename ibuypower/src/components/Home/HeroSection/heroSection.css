@@ -43,6 +43,7 @@
     max-width: 70%;
     margin-bottom: 30px;
     font-size: 36px;
+    color: black;
 }
 
 .information-slide-one-list {
@@ -50,11 +51,13 @@
     font-size: 18px;
     margin-bottom: 14px;
     max-width: 65%;
+    color: black;
 }
 
 .information-slide-one-small-text {
     font-size: 10px;
     margin-bottom: 60px;
+    color: black;
 }
 
 /* Slide Two */
@@ -113,7 +116,8 @@
     color: black;
 }
 
-.information-shop-btn-slide-seven {
+.information-shop-btn-slide-seven,
+.information-shop-btn-slide-one {
     font-weight: bolder;
     border-radius: 22px;
     padding: 6px 32px;

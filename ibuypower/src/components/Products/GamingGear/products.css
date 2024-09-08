@@ -1,0 +1,62 @@
+/* General Rules and Styles */
+.gaming-machines {
+    background-color: #fff
+}
+
+/* Hero Section */
+.gaming-machines-hero-section {
+    background-image: url(../../../assets/gamingGearImages/gaming_laptops_hero_Img_background.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+}
+
+.gaming-machines-hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 65%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gaming-machines-hero-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    width: 35%;
+}
+
+.gaming-machines-hero-content-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.gaming-machines-hero-content-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Featured Deals */
+.gaming-machines-featured-deals-section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 40px 0px;
+    line-height: 40px;
+}
+
+.gaming-machines-featured-deals-section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1514px;
+    margin: auto;
+}
+
+.gaming-machines-featured-deal {
+    text-align: center;
+}

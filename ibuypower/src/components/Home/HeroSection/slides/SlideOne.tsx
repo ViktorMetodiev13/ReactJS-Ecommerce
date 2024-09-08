@@ -1,6 +1,6 @@
 import React from "react";
 
-import slideOne from '../../../../assets/slideImages/slideOneImg.webp'
+import slideOne from '../../../../assets/slideImages/slideOneImg.jpg'
 
 export const SlideOne: React.FC = () => {
     return (
@@ -8,7 +8,7 @@ export const SlideOne: React.FC = () => {
             <img src={slideOne} alt="labor day massive sale on pcs" />
 
             <div className="information">
-                <h2 className="information-title-slide-one">Labor Day Massive Sale</h2>
+                <h2 className="information-title-slide-one">Fall Massive Sale</h2>
 
                 <ul className="information-slide-one-list">
                     <li className="slide-one-list-item">5% OFF for ALL purchase over $999 with Code "GAMERDAYS" *</li>
@@ -22,7 +22,7 @@ export const SlideOne: React.FC = () => {
 
                 <p className='information-slide-one-small-text'>* See sale page for details and limitations.</p>
 
-                <button className="information-shop-btn">Shop</button>
+                <button className="information-shop-btn-slide-one">Shop</button>
             </div>
         </div>
     )
