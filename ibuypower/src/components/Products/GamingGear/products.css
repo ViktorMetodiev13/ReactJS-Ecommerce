@@ -1,10 +1,10 @@
 /* General Rules and Styles */
-.gaming-machines {
+.gaming-gear {
     background-color: #fff;
 }
 
 /* Hero Section */
-.gaming-machines-hero-section {
+.gaming-gear-hero-section {
     background-image: url(../../../assets/gamingGearImages/gaming_laptops_hero_Img_background.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     min-height: 500px;
 }
 
-.gaming-machines-hero-content {
+.gaming-gear-hero-content {
     display: flex;
     align-items: center;
     max-width: 65%;
@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.gaming-machines-hero-section-text {
+.gaming-gear-hero-section-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -30,19 +30,19 @@
     width: 35%;
 }
 
-.gaming-machines-hero-content-title {
+.gaming-gear-hero-content-title {
     font-size: 32px;
     font-weight: 800;
     letter-spacing: 1px;
 }
 
-.gaming-machines-hero-content-subtitle {
+.gaming-gear-hero-content-subtitle {
     font-size: 14px;
     font-weight: 600;
 }
 
 /* Featured Deals */
-.gaming-machines-featured-deals-section-title {
+.gaming-gear-featured-deals-section-title {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -50,7 +50,7 @@
     line-height: 40px;
 }
 
-.gaming-machines-featured-deals-section-content {
+.gaming-gear-featured-deals-section-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1514px;
@@ -58,7 +58,7 @@
     gap: 20px;
 }
 
-.gaming-machines-featured-deal {
+.gaming-gear-featured-deal {
     text-align: center;
     background-color: #EDF5F3;
     border-radius: 14px;
@@ -70,34 +70,34 @@
     gap: 10px;
 }
 
-.gaming-machines-featured-deal:nth-child(2) {
+.gaming-gear-featured-deal:nth-child(2) {
     background-color: #FFFCE8;
 }
 
-.gaming-machines-featured-deal-title {
+.gaming-gear-featured-deal-title {
     font-size: 36px;
     width: 80%;
     margin: auto;
 }
 
-.gaming-machines-featured-deal-specs-list {
+.gaming-gear-featured-deal-specs-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
 }
 
-.gaming-machines-featured-deal-specs-list-item {
+.gaming-gear-featured-deal-specs-list-item {
     border: 1px solid rgb(230, 230, 230);
     padding: 4px;
     border-radius: 8px;
 }
 
-.gaming-machines-featured-deal-specs-list-item-title {
+.gaming-gear-featured-deal-specs-list-item-title {
     text-transform: uppercase;
     color: rgb(254 27 27);
 }
 
-.gaming-machines-featured-deal-price-tag {
+.gaming-gear-featured-deal-price-tag {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -105,25 +105,26 @@
     margin-bottom: 8px;
 }
 
-.gaming-machines-featured-deal-new-price {
+.gaming-gear-featured-deal-new-price {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: -10px;
 }
 
-.gaming-machines-featured-deal-old-price {
+.gaming-gear-featured-deal-old-price {
     text-decoration: line-through;
     color: rgb(119 119 119);
 }
 
-.gaming-machines-featured-deal-money-saved {
+.gaming-gear-featured-deal-money-saved {
     color: rgb(254 27 27);
     font-size: 18px;
     font-weight: 600;
-    font-family: HCo SSm, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+    font-family: HCo SSm, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    ;
 }
 
-.gaming-machines-featured-deal-buy-now-btn {
+.gaming-gear-featured-deal-buy-now-btn {
     font-size: 24px;
     padding: 8px 40px;
     font-weight: 700;
@@ -136,14 +137,141 @@
     z-index: 1;
 }
 
-.gaming-machines-featured-deal-buy-now-btn:hover {
+.gaming-gear-featured-deal-buy-now-btn:hover {
     transition: 0.3s;
     background-color: #be2119;
 }
 
-.gaming-machines-featured-deal-img {
+.gaming-gear-featured-deal-img {
     max-width: 100%;
     position: relative;
     top: 180px;
     margin: auto;
+}
+
+/* All Products */
+.gaming-gear-all-products-section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 40px 0px;
+    line-height: 40px;
+}
+
+.gaming-gear-all-products-section-content {
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.gaming-gear-all-products-section-aside {
+    padding: 20px 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gaming-gear-all-products-section-aside-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.gaming-gear-all-products-section-aside-price-header,
+.gaming-gear-all-products-section-aside-processor,
+.gaming-gear-all-products-section-aside-video-card,
+.gaming-gear-all-products-section-aside-video-card,
+.gaming-gear-all-products-section-aside-memory,
+.gaming-gear-all-products-section-aside-storage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.gaming-gear-all-products-section-aside-filter-name,
+.gaming-gear-all-products-section-aside-price-name,
+.gaming-gear-all-products-section-aside-processor-name,
+.gaming-gear-all-products-section-aside-processor-name,
+.gaming-gear-all-products-section-aside-video-card-name,
+.gaming-gear-all-products-section-aside-memory-name,
+.gaming-gear-all-products-section-aside-storage-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gaming-gear-all-products-section-aside-filter-subname {
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gaming-gear-all-products-section-main {
+    width: 80%;
+}
+
+.gaming-gear-all-products-section-main-header {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-radius: 15px;
+    margin: 0 12.5px .5rem;
+    gap: 30px;
+    padding-right: 40px;
+}
+
+.gaming-gear-all-products-section-main-footer {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-radius: 15px;
+    margin: 0 12.5px .5rem;
+    gap: 30px;
+    padding-left: 36px;
+}
+
+.gaming-gear-all-products-section-main-header-sort-by {
+    width: 300px;
+    border: 1px solid rgb(209 213 219);
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 10px;
+}
+
+.gaming-gear-all-products-section-main-header-pagination,
+.gaming-gear-all-products-section-main-footer-pagination {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gaming-gear-all-products-section-main-header-pagination-item,
+.gaming-gear-all-products-section-main-footer-pagination-item {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.gaming-gear-all-products-section-main-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
