@@ -40,6 +40,7 @@
     cursor: pointer;
     color: rgb(0 0 0);
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .features-item:nth-child(2) {

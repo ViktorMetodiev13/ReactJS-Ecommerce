@@ -3,16 +3,16 @@ import '../products.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import gamingLaptopsHeroImg from '../../../../assets/gamingGearImages/gaming_laptops_hero_Img.avif';
-import featuredDealsLaptopsImgOne from '../../../../assets/gamingGearImages/featuredDealsLaptopsImgOne.avif';
-import featuredDealsLaptopsImgTwo from '../../../../assets/gamingGearImages/featuredDealsLaptopsImgTwo.avif';
-import laptopOne from '../../../../assets/gamingGearImages/laptop1.avif'
+import gamingLaptopsHeroImg from '../../../../assets/gamingGearImages/gaming_laptops_images/gaming_laptops_hero_Img.avif';
+import featuredDealsLaptopsImgOne from '../../../../assets/gamingGearImages/gaming_laptops_images/featuredDealsLaptopsImgOne.avif';
+import featuredDealsLaptopsImgTwo from '../../../../assets/gamingGearImages/gaming_laptops_images/featuredDealsLaptopsImgTwo.avif';
+import laptopOne from '../../../../assets/gamingGearImages/gaming_laptops_images/laptop1.avif'
 
 
 export const GamingLaptops: React.FC = () => {
     return (
         <div className="gaming-gear">
-            <div className="gaming-gear-hero-section">
+            <div className="gaming-gear-hero-section-laptops">
                 <div className="gaming-gear-hero-content">
                     <div className="gaming-gear-hero-section-text">
                         <h2 className="gaming-gear-hero-content-title">Gaming Laptops</h2>

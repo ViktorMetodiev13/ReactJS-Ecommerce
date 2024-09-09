@@ -5,13 +5,18 @@
 }
 
 /* Hero Section */
-.gaming-gear-hero-section {
-    background-image: url(../../../assets/gamingGearImages/gaming_laptops_hero_Img_background.jpg);
+.gaming-gear-hero-section-laptops,
+.gaming-gear-hero-section-pcs {
+    background-image: url(../../../assets/gamingGearImages/gaming_laptops_images/gaming_laptops_hero_Img_background.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     min-height: 500px;
+}
+
+.gaming-gear-hero-section-pcs {
+    background-image: url(../../../assets/gamingGearImages/gaming_pcs_images/gaming_laptops_hero_img_background.jpg);
 }
 
 .gaming-gear-hero-content {
