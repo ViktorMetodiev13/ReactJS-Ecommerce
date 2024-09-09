@@ -1,6 +1,7 @@
 /* General Rules and Styles */
 .gaming-gear {
     background-color: #fff;
+    padding-bottom: 60px;
 }
 
 /* Hero Section */
@@ -232,6 +233,7 @@
     margin: 0 12.5px .5rem;
     gap: 30px;
     padding-right: 40px;
+    margin-bottom: 10px;
 }
 
 .gaming-gear-all-products-section-main-footer {
@@ -245,6 +247,7 @@
     margin: 0 12.5px .5rem;
     gap: 30px;
     padding-left: 36px;
+    margin-top: 10px;
 }
 
 .gaming-gear-all-products-section-main-header-sort-by {
