@@ -10,7 +10,7 @@ import pcImage from '../../../../assets/pcImages/AMD Ryzen Ultra Gaming Daily De
 
 export const GamingPCs: React.FC = () => {
     return (
-        <div className="gaming-pcs"><div className="gaming-gear">
+        <div className="gaming-gear">
             <div className="gaming-gear-hero-section-pcs">
                 <div className="gaming-gear-hero-content">
                     <div className="gaming-gear-hero-section-text">
@@ -319,6 +319,6 @@ export const GamingPCs: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div></div>
+        </div>
     )
 }

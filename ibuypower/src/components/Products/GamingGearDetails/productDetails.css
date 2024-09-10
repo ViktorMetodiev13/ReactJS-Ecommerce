@@ -1,0 +1,85 @@
+/* General Rules and Configs */
+.gaming-gear-details {
+    background-color: #fff;
+}
+
+/* Images and BriefInfo section */
+.gaming-gear-details-images-and-briefInfo-section {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.gaming-gear-details-images-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gaming-gear-details-image-item {
+    background-color: rgb(245 245 245);
+    object-fit: contain;
+}
+
+.gaming-gear-details-briefInfo-price-section-save {
+    border: 1px solid rgb(255 142 60);
+    color: rgb(255 142 60);
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+.gaming-gear-details-briefInfo-payments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gaming-gear-details-briefInfo-price-old-new {
+    display: flex;
+    gap: 10px;
+}
+
+.gaming-gear-details-briefInfo-status-shipment {
+    display: flex;
+    gap: 20px;
+}
+
+.gaming-gear-details-briefInfo-specifications-table-entry {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gaming-gear-details-briefInfo-specifications-table-entry-key {
+    width: 35%;
+}
+
+.gaming-gear-details-briefInfo-add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(254 27 27);
+    border: none;
+    padding: 12px;
+    color: #fff;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.gaming-gear-details-briefInfo-add-to-cart-btn:hover {
+    background-color: #be2119;
+}
+
+.gaming-gear-details-briefInfo-add-to-cart-btn-text {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+.fas fa-long-arrow-alt-right {
+    width: 40px;
+}

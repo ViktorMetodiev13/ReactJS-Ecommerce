@@ -4,6 +4,6 @@ import React from "react";
 
 export const GamingPCDetails: React.FC = () => {
     return (
-        <div className="gaming-pc-details">Gaming PC Details</div>
+        <div className="gaming-gear-details">Gaming PC Details</div>
     )
 }

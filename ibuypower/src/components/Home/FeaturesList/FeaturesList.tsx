@@ -9,6 +9,8 @@ import featureImg3 from '../../../assets/featuresImages/thirdImage.webp';
 import featureImg4 from '../../../assets/featuresImages/forthImage.webp';
 import featureImg5 from '../../../assets/featuresImages/fifthImg-removebg-preview.png';
 
+import * as PATHS from '../../../shared/paths'
+
 export const FeaturesList: React.FC = () => {
     return (
         <div className="features-list">
@@ -21,7 +23,7 @@ export const FeaturesList: React.FC = () => {
 
                         <p className="feature-information-description">Begin your gaming journey with professionally crafted RDY prebuilt systems, and take advantage of Free 2-Day Shipping to get started even faster!</p>
 
-                        <Link to='/products/gaming-pcs' className='shop-now-btn'>Show Now</Link>
+                        <Link to={PATHS.GAMING_PCS} className='shop-now-btn'>Show Now</Link>
                     </div>
                 </div>
             </div>
@@ -35,7 +37,7 @@ export const FeaturesList: React.FC = () => {
 
                         <p className="feature-information-description">Create your perfect gaming PC based on the games you play, and we’ll have it custom-built and shipped to you within 5 business days!</p>
 
-                        <Link to='/products/gaming-pcs' className='shop-now-btn'>Show Now</Link>
+                        <Link to={PATHS.GAMING_PCS} className='shop-now-btn'>Show Now</Link>
                     </div>
                 </div>
             </div>
@@ -49,7 +51,7 @@ export const FeaturesList: React.FC = () => {
 
                         <p className="feature-information-description">Custom-built to your specs, our PCs give you the edge. Choose the ideal components with our builder to ensure you outclass your adversaries.</p>
 
-                        <Link to='/products/gaming-pcs' className='shop-now-btn'>Show Now</Link>
+                        <Link to={PATHS.GAMING_PCS} className='shop-now-btn'>Show Now</Link>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@ export const FeaturesList: React.FC = () => {
 
                     <p className="features-gaming-pcs-subtitle">Explore our complete selection of gaming PCs and dive into the ultimate gaming experience, wherever you are.</p>
 
-                    <Link to='/products/gaming-pcs' className='shop-now-btn'>Show Now</Link>
+                    <Link to={PATHS.GAMING_PCS} className='shop-now-btn'>Show Now</Link>
 
                     <img src={featureImg5} alt="Gaming PCs" className='features-image-pcs' />
                 </div>
@@ -70,7 +72,7 @@ export const FeaturesList: React.FC = () => {
 
                     <p className="features-gaming-pcs-subtitle">Browse through our full range of configured gaming laptops. Immerse yourself in the ultimate gaming experience on the go.</p>
 
-                    <Link to='/products/gaming-laptops' className='shop-now-btn'>Show Now</Link>
+                    <Link to={PATHS.GAMING_LAPTOPS} className='shop-now-btn'>Show Now</Link>
 
                     <img src={featureImg4} alt="Gaming Laptops" className='features-image-pcs' />
                 </div>

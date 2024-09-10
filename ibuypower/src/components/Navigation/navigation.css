@@ -1,11 +1,9 @@
 .navigation {
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 60px;
-    padding-left: 60px;
 }
 
 .nav-list {
@@ -25,22 +23,10 @@
     padding-bottom: 16px;
 }
 
-.nav-list-item-link:hover {
-    border-bottom: 3px solid #8860D0;
-}
-
 .nav-icons-list {
     display: flex;
     gap: 28px;
     font-size: 20px;
-    color: #3a3a3a;
-}
-
-.nav-icon-list-item {
-    color: #3a3a3a !important;
-}
-
-.nav-icon-list-item-link {
     color: #3a3a3a;
 }
 
@@ -50,17 +36,21 @@
     padding: 0px;
 }
 
-.fa-search:hover {
+.fa-search,
+.fa-user,
+.fa-shopping-cart {
+    color: #3a3a3a;
     cursor: pointer;
-    color: #8860D0;
+}
+
+.fa-search:hover {
+        color: #8860D0;
 }
 
 .fa-user:hover {
-    cursor: pointer;
     color: #8860D0;
 }
 
 .fa-shopping-cart:hover {
-    cursor: pointer;
     color: #8860D0;
 }
