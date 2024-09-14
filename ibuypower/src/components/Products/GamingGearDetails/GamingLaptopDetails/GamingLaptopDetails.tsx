@@ -57,23 +57,28 @@ export const GamingLaptopDetail: React.FC = () => {
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Display</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Processor</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Video Card</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Memory</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Storage</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                </div>
+                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                                    <button className="gaming-gear-details-briefInfo-specifications-table-entry-btn">info</button>
                                 </div>
                             </div>
                         </div>
@@ -84,6 +89,12 @@ export const GamingLaptopDetail: React.FC = () => {
                         </button>
                     </div>
                 </div>
+            </div>
+
+            <div className="gaming-gear-details-detailed-specification">
+                <h3 className="gaming-gear-details-detailed-specification-title">Detailed Specification</h3>
+
+
             </div>
         </div>
     )
