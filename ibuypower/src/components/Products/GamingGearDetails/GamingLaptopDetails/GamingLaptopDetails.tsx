@@ -83,6 +83,13 @@ export const GamingLaptopDetail: React.FC = () => {
                             </div>
                         </div>
 
+                        <div className="gaming-gear-details-briefInfo-quantity">
+                            <span className="gaming-gear-details-briefInfo-quantity-text">QTY</span>
+                            <span className="gaming-gear-details-briefInfo-quantity-minus">-</span>
+                            <span className="gaming-gear-details-briefInfo-quantity-count">QTY</span>
+                            <span className="gaming-gear-details-briefInfo-quantity-plus">+</span>
+                        </div>
+
                         <button className="gaming-gear-details-briefInfo-add-to-cart-btn">
                             <span className="gaming-gear-details-briefInfo-add-to-cart-btn-text">Add to Cart</span>
                             <i className="fas fa-long-arrow-alt-right"></i>
