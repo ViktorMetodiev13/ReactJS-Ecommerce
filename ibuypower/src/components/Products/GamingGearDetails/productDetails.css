@@ -18,13 +18,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    width: 90%;
+    max-width: 60%;
 }
 
 .gaming-gear-details-image-item {
     background-color: rgb(245 245 245);
     object-fit: contain;
     flex-grow: 1;
+    width: 360px;
+    height: 360px;
 }
 
 /* BriefInfo section text */
@@ -107,7 +109,8 @@
 
 /* Product Specification table */
 
-.gaming-gear-details-briefInfo-specifications {
+.gaming-gear-details-briefInfo-specifications,
+.gaming-gear-details-detailed-specifications {
     margin-bottom: 20px;
 }
 
@@ -116,11 +119,13 @@
     margin-bottom: 14px;
 }
 
-.gaming-gear-details-briefInfo-specifications-table>div:nth-child(odd) {
+.gaming-gear-details-briefInfo-specifications-table>div:nth-child(odd),
+.gaming-gear-details-detailed-specifications-table>div:nth-child(odd) {
     background-color: rgb(236 236 236);
 }
 
-.gaming-gear-details-briefInfo-specifications-table-entry {
+.gaming-gear-details-briefInfo-specifications-table-entry,
+.gaming-gear-details-detailed-specifications-table-entry {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -128,12 +133,14 @@
     border-top: 1px solid lightgray;
 }
 
-.gaming-gear-details-briefInfo-specifications-table-entry-key {
+.gaming-gear-details-briefInfo-specifications-table-entry-key,
+.gaming-gear-details-detailed-specifications-table-entry-key {
     width: 35%;
     font-weight: 600;
 }
 
-.gaming-gear-details-briefInfo-specifications-table-entry-value {
+.gaming-gear-details-briefInfo-specifications-table-entry-value,
+.gaming-gear-details-detailed-specifications-table-entry-value {
     width: 80%;
 }
 
@@ -191,16 +198,28 @@
     font-weight: 600;
 }
 
-/* Detailed Specification */
+/* Detailed Specification Section */
 
 .gaming-gear-details-detailed-specification {
     max-width: 80%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .gaming-gear-details-detailed-specification-title {
     text-align: center;
     font-size: 28px;
     margin-bottom: 16px;
+}
+
+.gaming-gear-details-detailed-specifications-table-entry-key {
+    max-width: 12%;
+}
+
+.gaming-gear-details-detailed-specifications-table-entry-key {
+    font-size: 16px;
+}
+
+.gaming-gear-details-detailed-specifications-table-entry-value {
+    font-size: 16px;
 }
