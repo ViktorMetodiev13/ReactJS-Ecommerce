@@ -26,7 +26,7 @@ export const GamingLaptopDetail: React.FC = () => {
                 <div className="gaming-gear-details-briefInfo">
                     <img src={windows11Img} alt="windows11" />
 
-                    <span className='playtime-anytime'>Playtime. Anytime.</span>
+                    <span className='playtime-anytime-span'>Playtime. Anytime.</span>
 
                     <h2 className="gaming-gear-details-briefInfo-title">Chimera NP9373V Gaming Laptop</h2>
 
@@ -57,23 +57,23 @@ export const GamingLaptopDetail: React.FC = () => {
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Display</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Chimera NP9373V, 17.3'' QHD 2560x1440, 240Hz, Wide View Angle, Matte Finish</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Processor</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Intel® Core™ i9-14900HX Processor (8X P-core + 16X E-core, up to 5.8GHz/36MB L3 Cache)</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Video Card</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">NVIDIA GeForce RTX 4080 - 12 GB GDDR6 (DLSS 3.5 – AI-Powered Performance) [NB] </p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Memory</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">16GB [16GB x 1] 5600MHz DDR5 SO-DIMM Laptop Memory [Major Brand]</p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Storage</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">1TB WD Blue SN580 M.2 PCIe Gen 4 NVMe SSD -- Gen 4 Read: 4150MB/s; Write: 4150MB/s, Gen 3 Read: 3539MB/s; Write: 3444MB/s </p>
                                 </div>
                                 <div className="gaming-gear-details-briefInfo-specifications-table-entry">
                                     <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
@@ -85,9 +85,9 @@ export const GamingLaptopDetail: React.FC = () => {
 
                         <div className="gaming-gear-details-briefInfo-quantity">
                             <span className="gaming-gear-details-briefInfo-quantity-text">QTY</span>
-                            <span className="gaming-gear-details-briefInfo-quantity-minus">-</span>
+                            <i className="fas fa-minus"></i>
                             <span className="gaming-gear-details-briefInfo-quantity-count">1</span>
-                            <span className="gaming-gear-details-briefInfo-quantity-plus">+</span>
+                            <i className="fas fa-plus"></i>
                         </div>
 
                         <button className="gaming-gear-details-briefInfo-add-to-cart-btn">

@@ -9,19 +9,38 @@
     margin: auto;
     padding-top: 30px;
     display: flex;
-    gap: 40px;
+    gap: 34px;
 }
 
+/* Product Images */
 .gaming-gear-details-images-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 14px;
+    width: 100%;
 }
 
 .gaming-gear-details-image-item {
     background-color: rgb(245 245 245);
     object-fit: contain;
 }
+
+/* BriefInfo section text */
+
+.playtime-anytime-span {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.gaming-gear-details-briefInfo-title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid darkgray;
+}
+
+/* BriefInfo section pricing */
 
 .gaming-gear-details-briefInfo-price-section-save {
     border: 1px solid rgb(255 142 60);
@@ -34,27 +53,117 @@
 .gaming-gear-details-briefInfo-payments {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 8px;
 }
 
 .gaming-gear-details-briefInfo-price-old-new {
     display: flex;
-    gap: 10px;
+    gap: 16px;
+    align-items: flex-end;
 }
+
+.gaming-gear-details-briefInfo-price-new {
+    font-weight: 600;
+    font-size: 32px;
+    padding: 0px;
+}
+
+.gaming-gear-details-briefInfo-price-old {
+    padding-bottom: 6px;
+    text-decoration: line-through;
+    color: rgb(153 153 153);
+    font-size: 18px;
+}
+
+.gaming-gear-details-briefInfo-monthly-payment {
+    padding-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Status of shipment */
 
 .gaming-gear-details-briefInfo-status-shipment {
     display: flex;
-    gap: 20px;
+    gap: 24px;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.gaming-gear-details-briefInfo-status {
+    font-size: 16px;
+    color: rgb(118 185 0);
+    font-weight: 700;
+}
+
+.gaming-gear-details-briefInfo-shipment {
+    font-size: 16px;
+}
+
+/* Product Specification table */
+
+.gaming-gear-details-briefInfo-specifications {
+    margin-bottom: 20px;
+}
+
+.gaming-gear-details-briefInfo-specifications-title {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.gaming-gear-details-briefInfo-specifications-table>div:nth-child(odd) {
+    background-color: rgb(236 236 236);
 }
 
 .gaming-gear-details-briefInfo-specifications-table-entry {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 6px 10px;
+    border-top: 1px solid lightgray;
 }
 
 .gaming-gear-details-briefInfo-specifications-table-entry-key {
     width: 35%;
+    font-weight: 600;
 }
+
+.gaming-gear-details-briefInfo-specifications-table-entry-value {
+    width: 80%;
+}
+
+.gaming-gear-details-briefInfo-specifications-table-entry-btn {
+    border: none;
+    color: rgb(36 116 255);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Quantity section */
+
+.gaming-gear-details-briefInfo-quantity {
+    margin-bottom: 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gaming-gear-details-briefInfo-quantity-count {
+    border: 1px solid rgb(153 153 153);
+    padding: 0px 16px;
+    border-radius: 4px;
+}
+
+.fa-minus,
+.fa-plus {
+    cursor: pointer;
+}
+
+/* Add to cart btn */
 
 .gaming-gear-details-briefInfo-add-to-cart-btn {
     display: flex;
