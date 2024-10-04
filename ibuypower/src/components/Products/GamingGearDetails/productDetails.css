@@ -5,24 +5,26 @@
 
 /* Images and BriefInfo section */
 .gaming-gear-details-images-and-briefInfo-section {
-    width: 70%;
+    max-width: 80%;
     margin: auto;
     padding-top: 30px;
     display: flex;
     gap: 34px;
+    margin-bottom: 80px;
 }
 
 /* Product Images */
 .gaming-gear-details-images-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 14px;
-    width: 100%;
+    width: 90%;
 }
 
 .gaming-gear-details-image-item {
     background-color: rgb(245 245 245);
     object-fit: contain;
+    flex-grow: 1;
 }
 
 /* BriefInfo section text */
@@ -189,6 +191,16 @@
     font-weight: 600;
 }
 
-.fas fa-long-arrow-alt-right {
-    width: 40px;
+/* Detailed Specification */
+
+.gaming-gear-details-detailed-specification {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.gaming-gear-details-detailed-specification-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 16px;
 }

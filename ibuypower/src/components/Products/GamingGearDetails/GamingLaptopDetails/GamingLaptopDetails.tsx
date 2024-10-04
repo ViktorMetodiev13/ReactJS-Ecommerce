@@ -102,76 +102,65 @@ export const GamingLaptopDetail: React.FC = () => {
                 <h3 className="gaming-gear-details-detailed-specification-title">Detailed Specification</h3>
 
                 <div className="gaming-gear-details-briefInfo">
-                    <img src={windows11Img} alt="windows11" />
-
-                    <span className='playtime-anytime'>Playtime. Anytime.</span>
-
-                    <h2 className="gaming-gear-details-briefInfo-title">Chimera NP9373V Gaming Laptop</h2>
-
-                    <div className="gaming-gear-details-briefInfo-price-section">
-                        <span className="gaming-gear-details-briefInfo-price-section-save">Save $200</span>
-
-                        <div className="gaming-gear-details-briefInfo-payments">
-                            <div className="gaming-gear-details-briefInfo-price-old-new">
-                                <span className="gaming-gear-details-briefInfo-price-new">$2,399</span>
-                                <span className="gaming-gear-details-briefInfo-price-old">$2,599</span>
+                    <div className="gaming-gear-details-briefInfo-specifications">
+                        <div className="gaming-gear-details-briefInfo-specifications-table">
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
                             </div>
-
-                            <span className="gaming-gear-details-briefInfo-monthly-payment">Starting at <span className='monthly-payment-amount'>$116/mo</span> with Affirm</span>
-                        </div>
-
-                        <div className="gaming-gear-details-briefInfo-status-shipment">
-                            <span className="gaming-gear-details-briefInfo-status">In Stock</span>
-                            <span className="gaming-gear-details-briefInfo-shipment">The estimated ship date is July 2024.</span>
-                        </div>
-
-                        <div className="gaming-gear-details-briefInfo-specifications">
-                            <h4 className="gaming-gear-details-briefInfo-specifications-title">Specification</h4>
-
-                            <div className="gaming-gear-details-briefInfo-specifications-table">
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Operating System</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home <span className='gaming-gear-details-briefInfo-specifications-table-entry-value-special-text'>[(64-bit)]</span></p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Display</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Processor</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Video Card</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Memory</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Storage</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
-                                </div>
-                                <div className="gaming-gear-details-briefInfo-specifications-table-entry">
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
-                                    <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
-                                    <button className="gaming-gear-details-briefInfo-specifications-table-entry-btn">info</button>
-                                </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Display</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Processor</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Video Card</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Memory</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Storage</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Windows 11 Home</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
+                            </div>
+                            <div className="gaming-gear-details-briefInfo-specifications-table-entry">
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-key">Warranty</p>
+                                <p className="gaming-gear-details-briefInfo-specifications-table-entry-value">Standard Warranty Service</p>
                             </div>
                         </div>
-
-                        <div className="gaming-gear-details-briefInfo-quantity">
-                            <span className="gaming-gear-details-briefInfo-quantity-text">QTY</span>
-                            <span className="gaming-gear-details-briefInfo-quantity-minus">-</span>
-                            <span className="gaming-gear-details-briefInfo-quantity-count">1</span>
-                            <span className="gaming-gear-details-briefInfo-quantity-plus">+</span>
-                        </div>
-
-                        <button className="gaming-gear-details-briefInfo-add-to-cart-btn">
-                            <span className="gaming-gear-details-briefInfo-add-to-cart-btn-text">Add to Cart</span>
-                            <i className="fas fa-long-arrow-alt-right"></i>
-                        </button>
                     </div>
                 </div>
             </div>
