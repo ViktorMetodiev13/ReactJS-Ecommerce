@@ -1,0 +1,80 @@
+.support-page {
+    padding: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.support-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.support-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.support-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.support-faq,
+.support-contact,
+.support-warranty {
+    margin-bottom: 2rem;
+}
+
+.support-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2e86de;
+}
+
+.support-text {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.support-faq-list {
+    margin-top: 1.5rem;
+}
+
+.support-faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.support-question {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.support-answer {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.support-contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.support-contact-item {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.support-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
