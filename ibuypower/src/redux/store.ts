@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import gamingPCsSlice from "./gamingPCsSlice";
-import gamingLaptopsSlice from "./gamingLaptopsSlice";
+import gamingPCsSlice from "./productsSlices/gamingPCsSlice";
+import gamingLaptopsSlice from "./productsSlices/gamingLaptopsSlice";
 
 export const store = configureStore({
     reducer: {
         gamingPCs: gamingPCsSlice,
-        gamingLaptops: gamingLaptopsSlice
+        gamingLaptops: gamingLaptopsSlice,
+        // authentication: auth
     },
 })
 
