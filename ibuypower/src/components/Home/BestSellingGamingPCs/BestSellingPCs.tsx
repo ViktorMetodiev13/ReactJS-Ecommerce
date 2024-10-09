@@ -17,7 +17,7 @@ import pc4 from '../../../assets/pcImages/pc4.avif';
 export const BestSellingPCs: React.FC = () => {
     return (
         <div className="best-selling-gaming-pcs">
-                <h2 className="best-selling-gaming-pcs-title">Best Selling Gaming PCs</h2>
+                <h2 className="best-selling-gaming-pcs-title">Best Se Gaming PCs</h2>
 
                 <div className="pc-list">
                     <Swiper
