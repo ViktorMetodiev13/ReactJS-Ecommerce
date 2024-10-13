@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import * as PATHS from '../../../shared/paths';
 import { useFormik } from 'formik';
+import { registerYupSchema } from '../../../yupSchemas/registerYupSchema';
 
 
 export const Register: React.FC = () => {
@@ -17,6 +18,7 @@ export const Register: React.FC = () => {
             email: '',
             password: ''
         },
+        validationSchema: registerYupSchema,
         onSubmit: () => {
             console.log(values);
         }
@@ -29,8 +31,6 @@ export const Register: React.FC = () => {
             <form className='auth-register-form' onSubmit={handleSubmit}>
                 <h2 className="auth-title">Create Account</h2>
 
-                test
-
                 <div className="input-fields">
                     <input
                         id='firstName'
@@ -41,6 +41,9 @@ export const Register: React.FC = () => {
                         value={values.firstName}
                         onBlur={handleBlur}
                     />
+                    {touched.firstName && errors.firstName && (
+                        <p className='register-error-text'>{errors.firstName}</p>
+                    )} 
                     <input
                         id='lastName'
                         type="text"
@@ -50,6 +53,7 @@ export const Register: React.FC = () => {
                         value={values.lastName}
                         onBlur={handleBlur}
                     />
+                    {touched.firstName && errors.lastName && !onfocus ? (<p className='register-error-text'>Last Name must be between 2 and 15 charactes</p>) : null}
                     <input
                         id='email'
                         type="email"
@@ -59,6 +63,7 @@ export const Register: React.FC = () => {
                         value={values.email}
                         onBlur={handleBlur}
                     />
+                    {errors.email && <p className='register-error-text'>Invalid Email</p>}
                     <input
                         id='password'
                         type="password"
@@ -68,10 +73,11 @@ export const Register: React.FC = () => {
                         value={values.password}
                         onBlur={handleBlur}
                     />
+                    {errors.password && <p className='register-error-text'>Password must be between 6 and 20 characters</p>}
 
                     <p className="sign-in"><Link to={PATHS.LOGIN} className='register-sign-in-link'>Already have an Account?</Link></p>
 
-                    <button className="auth-create-btn">Create</button>
+                    <button className="auth-create-btn" type='submit'>Create</button>
                 </div>
             </form>
         </div>
