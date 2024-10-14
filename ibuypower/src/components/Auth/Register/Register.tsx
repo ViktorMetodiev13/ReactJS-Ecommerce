@@ -3,14 +3,18 @@ import '../auth.css';
 import React from "react";
 
 import backgroundImg from '../../../assets/login-register-Background.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import * as PATHS from '../../../shared/paths';
 import { useFormik } from 'formik';
 import { registerYupSchema } from '../../../yupSchemas/registerYupSchema';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../../configs/firebase';
 
 
 export const Register: React.FC = () => {
+    const navigate = useNavigate();
+
     const { handleSubmit, handleChange, values, errors, handleBlur, touched } = useFormik({
         initialValues: {
             firstName: '',
@@ -20,7 +24,19 @@ export const Register: React.FC = () => {
         },
         validationSchema: registerYupSchema,
         onSubmit: () => {
-            console.log(values);
+            createUserWithEmailAndPassword(auth, values.email, values.password)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    // ...
+                    console.log(values);
+                    navigate('/');
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                });
         }
     });
 
