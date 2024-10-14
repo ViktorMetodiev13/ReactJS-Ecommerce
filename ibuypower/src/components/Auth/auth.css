@@ -1,6 +1,7 @@
 .auth-register,
 .auth-login {
     position: relative;
+    z-index: 1;
 }
 
 .login-register-background {
