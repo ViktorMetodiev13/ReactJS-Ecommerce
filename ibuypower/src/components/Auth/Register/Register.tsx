@@ -29,12 +29,19 @@ export const Register: React.FC = () => {
                     // Signed up 
                     const user = userCredential.user;
                     // ...
+                    console.log(user);
                     console.log(values);
                     navigate('/');
                 })
-                .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
+                .catch((
+                    // error
+                ) => {
+
+                    // SET REACT-TOASTIFY FOR ERROR FROM THE DATA BASE 
+                    // -> (NOT FILLED FIELD - ERROR-CODE 400 - BAD REQUEST)
+
+                    // const errorCode = error.code;
+                    // const errorMessage = error.message;
                     // ..
                 });
         }
@@ -52,46 +59,62 @@ export const Register: React.FC = () => {
                         id='firstName'
                         type="text"
                         placeholder='First Name'
-                        className='auth-field'
+                        className={`auth-field ${touched.firstName && errors.firstName ? 'error' : ''}`}
                         onChange={handleChange}
                         value={values.firstName}
                         onBlur={handleBlur}
                     />
-                    {/* {errors.firstName &&
-                        <p className='register-error-text'>{errors.firstName}</p>
-                    } */}
+                    {(touched.firstName && errors.firstName) || (touched.firstName && (values.firstName.length > 0 && values.firstName.length < 2)) ?
+                        (<div className='error-div'>
+                            <i className="fas fa-exclamation-circle"></i>
+                            <p className='register-error-text'>{errors.firstName}.</p>
+                        </div>) : null
+                    }
                     <input
                         id='lastName'
                         type="text"
                         placeholder='Last Name'
-                        className='auth-field'
+                        className={`auth-field ${touched.lastName && errors.lastName ? 'error' : ''}`}
                         onChange={handleChange}
                         value={values.lastName}
                         onBlur={handleBlur}
                     />
-                    {/* {errors.lastName &&
-                        <p className='register-error-text'>Last Name must be between 2 and 15 charactes</p>
-                    } */}
+                    {(touched.lastName && errors.lastName) || (touched.lastName && values.lastName.length < 2) ?
+                        (<div className='error-div'>
+                            <i className="fas fa-exclamation-circle"></i>
+                            <p className='register-error-text'>{errors.lastName}.</p>
+                        </div>) : null
+                    }
                     <input
                         id='email'
                         type="email"
                         placeholder='Email'
-                        className='auth-field'
+                        className={`auth-field ${touched.email && errors.email ? 'error' : ''}`}
                         onChange={handleChange}
                         value={values.email}
                         onBlur={handleBlur}
                     />
-                    {/* {errors.email && <p className='register-error-text'>Invalid Email</p>} */}
+                    {touched.email && errors.email ? 
+                        (<div className='error-div'>
+                            <i className="fas fa-exclamation-circle"></i>
+                            <p className='register-error-text'>{errors.email}.</p>
+                        </div>) : null
+                    }
                     <input
                         id='password'
                         type="password"
                         placeholder='Password'
-                        className='auth-field'
+                        className={`auth-field ${touched.password && errors.password ? 'error' : ''}`}
                         onChange={handleChange}
                         value={values.password}
                         onBlur={handleBlur}
                     />
-                    {/* {errors.password && <p className='register-error-text'>Password must be between 6 and 20 characters</p>} */}
+                    {touched.email && errors.password ?
+                        (<div className='error-div'>
+                            <i className="fas fa-exclamation-circle"></i>
+                            <p className='register-error-text'>{errors.password}.</p>
+                        </div>) : null
+                    }
 
                     <p className="sign-in"><Link to={PATHS.LOGIN} className='register-sign-in-link'>Already have an Account?</Link></p>
 
