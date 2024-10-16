@@ -79,7 +79,7 @@ export const Register: React.FC = () => {
                         value={values.lastName}
                         onBlur={handleBlur}
                     />
-                    {(touched.lastName && errors.lastName) || (touched.lastName && values.lastName.length < 2) ?
+                    {(touched.lastName && errors.lastName) || (touched.lastName && (values.lastName.length > 0 && values.lastName.length < 2)) ?
                         (<div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.lastName}.</p>
@@ -109,7 +109,7 @@ export const Register: React.FC = () => {
                         value={values.password}
                         onBlur={handleBlur}
                     />
-                    {touched.email && errors.password ?
+                    {(touched.password && errors.password) || (touched.password && (values.password.length > 0 && values.password.length < 2)) ?
                         (<div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.password}.</p>

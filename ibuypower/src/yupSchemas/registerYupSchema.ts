@@ -9,10 +9,10 @@ export const registerYupSchema = Yup.object().shape({
         .matches(validateNames, 'Invalid First Name'),
         // .required('First Name is required'),
     lastName: Yup.string()
-        .max(15, 'First Name must be maximum 15 characters')
-        .min(2, 'First Name must be minimum 2 characters')
-        .matches(validateNames, 'Invalid First Name'),
-        // .required('First Name is required'),
+        .max(15, 'Last Name cannot exceed 15 characters')
+        .min(2, 'Last Name must be at least 2 characters')
+        .matches(validateNames, 'Invalid Last Name'),
+        // .required('Last Name is required'),
     email: Yup.string()
         .email('Invalid email'),
         // .required('Email is Required'),
