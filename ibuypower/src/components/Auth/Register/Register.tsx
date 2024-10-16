@@ -11,11 +11,10 @@ import { registerYupSchema } from '../../../yupSchemas/registerYupSchema';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../configs/firebase';
 
-
 export const Register: React.FC = () => {
     const navigate = useNavigate();
 
-    const { handleSubmit, handleChange, values, errors, handleBlur, touched } = useFormik({
+    const { handleSubmit, handleChange, values, errors, touched, setTouched, setFieldValue, validateField, validateForm } = useFormik({
         initialValues: {
             firstName: '',
             lastName: '',
@@ -23,35 +22,54 @@ export const Register: React.FC = () => {
             password: ''
         },
         validationSchema: registerYupSchema,
-        onSubmit: () => {
-            createUserWithEmailAndPassword(auth, values.email, values.password)
+        validateOnBlur: false,
+        validateOnChange: false,
+        onSubmit: (formValues) => {
+            createUserWithEmailAndPassword(auth, formValues.email, formValues.password)
                 .then((userCredential) => {
-                    // Signed up 
                     const user = userCredential.user;
-                    // ...
                     console.log(user);
-                    console.log(values);
+                    console.log(formValues);
                     navigate('/');
                 })
-                .catch((
-                    // error
-                ) => {
+                .catch((error) => {
+                    if (error.code == 400) {
+                        console.log(error.code);
 
-                    // SET REACT-TOASTIFY FOR ERROR FROM THE DATA BASE 
-                    // -> (NOT FILLED FIELD - ERROR-CODE 400 - BAD REQUEST)
-
-                    // const errorCode = error.code;
-                    // const errorMessage = error.message;
-                    // ..
+                    }
                 });
         }
     });
+
+    // Custom handleSubmit to validate the form before submitting
+    const onSubmitForm = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setTouched({
+            firstName: true,
+            lastName: true,
+            email: true,
+            password: true,
+        });
+
+        const errors = await validateForm(); // Manually validate the form
+
+        if (Object.keys(errors).length === 0) {
+            handleSubmit(e); // Submit the form if no errors
+        }
+    };
+
+    // Handle field change to manually validate the specific field
+    const handleFieldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { id, value } = e.target;
+        setFieldValue(id, value);
+        validateField(id); // Validate the specific field
+    };
 
     return (
         <div className="auth-register">
             <img src={backgroundImg} className='login-register-background' />
 
-            <form className='auth-register-form' onSubmit={handleSubmit}>
+            <form className='auth-register-form' onSubmit={onSubmitForm}>
                 <h2 className="auth-title">Create Account</h2>
 
                 <div className="input-fields">
@@ -60,61 +78,57 @@ export const Register: React.FC = () => {
                         type="text"
                         placeholder='First Name'
                         className={`auth-field ${touched.firstName && errors.firstName ? 'error' : ''}`}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         value={values.firstName}
-                        onBlur={handleBlur}
                     />
-                    {(touched.firstName && errors.firstName) || (touched.firstName && (values.firstName.length > 0 && values.firstName.length < 2)) ?
-                        (<div className='error-div'>
+                    {touched.firstName && errors.firstName ? (
+                        <div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.firstName}.</p>
-                        </div>) : null
-                    }
+                        </div>
+                    ) : null}
                     <input
                         id='lastName'
                         type="text"
                         placeholder='Last Name'
                         className={`auth-field ${touched.lastName && errors.lastName ? 'error' : ''}`}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         value={values.lastName}
-                        onBlur={handleBlur}
                     />
-                    {(touched.lastName && errors.lastName) || (touched.lastName && (values.lastName.length > 0 && values.lastName.length < 2)) ?
-                        (<div className='error-div'>
+                    {touched.lastName && errors.lastName ? (
+                        <div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.lastName}.</p>
-                        </div>) : null
-                    }
+                        </div>
+                    ) : null}
                     <input
                         id='email'
                         type="email"
                         placeholder='Email'
                         className={`auth-field ${touched.email && errors.email ? 'error' : ''}`}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         value={values.email}
-                        onBlur={handleBlur}
                     />
-                    {touched.email && errors.email ? 
-                        (<div className='error-div'>
+                    {touched.email && errors.email ? (
+                        <div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.email}.</p>
-                        </div>) : null
-                    }
+                        </div>
+                    ) : null}
                     <input
                         id='password'
                         type="password"
                         placeholder='Password'
                         className={`auth-field ${touched.password && errors.password ? 'error' : ''}`}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         value={values.password}
-                        onBlur={handleBlur}
                     />
-                    {(touched.password && errors.password) || (touched.password && (values.password.length > 0 && values.password.length < 2)) ?
-                        (<div className='error-div'>
+                    {touched.password && errors.password ? (
+                        <div className='error-div'>
                             <i className="fas fa-exclamation-circle"></i>
                             <p className='register-error-text'>{errors.password}.</p>
-                        </div>) : null
-                    }
+                        </div>
+                    ) : null}
 
                     <p className="sign-in"><Link to={PATHS.LOGIN} className='register-sign-in-link'>Already have an Account?</Link></p>
 
@@ -122,5 +136,5 @@ export const Register: React.FC = () => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
