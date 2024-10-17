@@ -1,6 +1,6 @@
 import '../auth.css';
 
-import React from "react";
+import React, { useState } from "react";
 
 import backgroundImg from '../../../assets/login-register-Background.jpg';
 import { Link, useNavigate } from 'react-router-dom';
@@ -10,11 +10,15 @@ import { useFormik } from 'formik';
 import { registerYupSchema } from '../../../yupSchemas/registerYupSchema';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../configs/firebase';
+import { toast, ToastContainer } from 'react-toastify';
+import { Loading } from '../../../shared/Loading/Loading';
 
 export const Register: React.FC = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    
     const navigate = useNavigate();
 
-    const { handleSubmit, handleChange, values, errors, touched, setTouched, setFieldValue, validateField, validateForm } = useFormik({
+    const { handleSubmit, values, errors, touched, setTouched, setFieldValue, validateField, validateForm } = useFormik({
         initialValues: {
             firstName: '',
             lastName: '',
@@ -25,18 +29,27 @@ export const Register: React.FC = () => {
         validateOnBlur: false,
         validateOnChange: false,
         onSubmit: (formValues) => {
+            setIsLoading(true);
+
             createUserWithEmailAndPassword(auth, formValues.email, formValues.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
+
+                    setIsLoading(false);
+
+                    toast.success('Account created!');
+                    
                     console.log(user);
                     console.log(formValues);
                     navigate('/');
                 })
                 .catch((error) => {
                     if (error.code == 400) {
-                        console.log(error.code);
-
+                        toast.warning('Email is already used. Try to log in.');
                     }
+                    setIsLoading(false);
+
+                    toast.error(error.message);
                 });
         }
     });
@@ -67,6 +80,9 @@ export const Register: React.FC = () => {
 
     return (
         <div className="auth-register">
+            <ToastContainer />
+            {isLoading && <Loading />}
+
             <img src={backgroundImg} className='login-register-background' />
 
             <form className='auth-register-form' onSubmit={onSubmitForm}>

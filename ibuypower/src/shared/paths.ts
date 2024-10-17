@@ -10,3 +10,4 @@ export const REGISTER = '/register';
 export const RESET_PASSWORD = '/login/reset-password';
 export const CART = '/cart';
 export const NOT_FOUND = '*';
+// export const LOADING = '/loading';

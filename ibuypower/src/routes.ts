@@ -14,6 +14,7 @@ import { GamingLaptopDetail } from './components/Products/GamingGearDetails/Gami
 import { AboutUs } from './components/AboutUs/AboutUs';
 import { Cart } from './components/Cart/Cart';
 import { Support } from './components/Support/Support';
+// import { Loading } from './shared/Loading/Loading';
 
 import * as PATHS from './shared/paths';
 
@@ -30,4 +31,5 @@ export const routes: RouteObject[] = [
     { path: PATHS.RESET_PASSWORD, element: React.createElement<typeof Home>(ResetPassword) },
     { path: PATHS.CART, element: React.createElement<typeof Home>(Cart) },
     { path: PATHS.NOT_FOUND, element: React.createElement<typeof Home>(NotFound) },
+    // { path: PATHS.LOADING, element: React.createElement<typeof Home>(Loading) },
 ];
