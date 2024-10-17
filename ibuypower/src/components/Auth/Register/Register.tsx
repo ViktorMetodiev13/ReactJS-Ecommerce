@@ -15,7 +15,7 @@ import { Loading } from '../../../shared/Loading/Loading';
 
 export const Register: React.FC = () => {
     const [isLoading, setIsLoading] = useState(false);
-    
+
     const navigate = useNavigate();
 
     const { handleSubmit, values, errors, touched, setTouched, setFieldValue, validateField, validateForm } = useFormik({
@@ -33,19 +33,21 @@ export const Register: React.FC = () => {
 
             createUserWithEmailAndPassword(auth, formValues.email, formValues.password)
                 .then((userCredential) => {
-                    const user = userCredential.user;
+                    // const user = 
+                    userCredential.user;
 
                     setIsLoading(false);
 
                     toast.success('Account created!');
-                    
-                    console.log(user);
-                    console.log(formValues);
+
                     navigate('/');
                 })
                 .catch((error) => {
-                    if (error.code == 400) {
+                    console.log('here');
+
+                    if (error == 400) {
                         toast.warning('Email is already used. Try to log in.');
+                        setIsLoading(false);
                     }
                     setIsLoading(false);
 
@@ -80,7 +82,7 @@ export const Register: React.FC = () => {
 
     return (
         <div className="auth-register">
-            <ToastContainer />
+
             {isLoading && <Loading />}
 
             <img src={backgroundImg} className='login-register-background' />
@@ -151,6 +153,7 @@ export const Register: React.FC = () => {
                     <button className="auth-create-btn" type='submit'>Create</button>
                 </div>
             </form>
+            <ToastContainer />
         </div>
     );
 };
