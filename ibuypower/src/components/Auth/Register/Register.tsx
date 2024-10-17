@@ -1,17 +1,17 @@
 import '../auth.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import React, { useState } from "react";
-
-import backgroundImg from '../../../assets/login-register-Background.jpg';
 import { Link, useNavigate } from 'react-router-dom';
-
-import * as PATHS from '../../../shared/paths';
 import { useFormik } from 'formik';
+import { toast, ToastContainer } from 'react-toastify';
+import backgroundImg from '../../../assets/login-register-Background.jpg';
 import { registerYupSchema } from '../../../yupSchemas/registerYupSchema';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../configs/firebase';
-import { toast, ToastContainer } from 'react-toastify';
 import { Loading } from '../../../shared/Loading/Loading';
+
+import * as PATHS from '../../../shared/paths';
 
 export const Register: React.FC = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -43,11 +43,12 @@ export const Register: React.FC = () => {
                     navigate('/');
                 })
                 .catch((error) => {
-                    console.log('here');
-
-                    if (error == 400) {
-                        toast.warning('Email is already used. Try to log in.');
+                    console.log(error);
+                    
+                    if (error.code == 'auth/email-already-in-use') {
+                        toast.warn('Email is already used. Try to log in.');
                         setIsLoading(false);
+                        return;
                     }
                     setIsLoading(false);
 
