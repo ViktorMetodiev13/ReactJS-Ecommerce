@@ -4,7 +4,7 @@ Welcome to **iBuyPower**, a web application designed for gamers who want to purc
 
 ## Project Status
 
-**Ongoing** - This project is currently under active development. New features and improvements are being implemented regularly.
+**Frozen** - This project is frozen for now.
 
 ## Features
 
